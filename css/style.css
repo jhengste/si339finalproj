@@ -26,9 +26,10 @@ nav {
 	background-color: #867070;
 	padding: 25px 0;
 	text-align: left;
+	padding-left: 10px;
 }
 
-a.skip{
+a.skip {
 	background: white;
 	left: 0;
 	padding: 6px;
@@ -39,19 +40,34 @@ a.skip{
 	z-index: 1;
 }
 
-a.skip:focus{
-	top:20px;
+a.skip:focus {
+	top: 20px;
 	color: black;
 	text-decoration-style: solid;
 }
 
-nav, main {
-	padding-left: 10px;
+.active {
+	text-decoration: underline;
 }
 
-.images {}
+footer {
+	background-color: #867070;
+	color: white;
+	padding-top: 30px;
+	text-align: center;
+}
 
-img {
-	height: 200px;
-	width: auto;
+@media screen and (min-width: 800px) {
+	.images {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border: 2px solid #867070;
+	}
 }

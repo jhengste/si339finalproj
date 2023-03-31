@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <title>Places I am going this summer</title>
 </head>
+
 <body>
     <a class="skip" href="#skip">Skip to Main Content</a>
     <header>
@@ -20,14 +23,14 @@
             </ul>
         </nav>
     </header>
-    <main id = "skip">
+    <main id="skip">
         <h1>Hello!</h1>
         <p>I love traveling! Here are some places I have been before</p>
         <p>The other tabs will showcase places I am going this summer!</p>
         <div class="images">
-            <img src="../index_images/disney_castle.jpeg" alt="me in front of the disney castle"/>
-            <img src="../index_images/disney_epcot.jpeg" alt="me in front of a torii in epcot"/>
-            <img src="../index_images/disney_magic_kingdom.jpeg" alt="me in the avatar area of animal kingdom"/>
+            <img src="../index_images/disney_castle.jpeg" alt="me in front of the disney castle" />
+            <img src="../index_images/disney_epcot.jpeg" alt="me in front of a torii in epcot" />
+            <img src="../index_images/disney_magic_kingdom.jpeg" alt="me in the avatar area of animal kingdom" />
             <img src="../index_images/nyc_statue.jpg" alt="me in front of the statue of liberty">
             <img src="../index_images/nyc_high.jpg" alt="me at the top of the rock">
             <img src="../index_images/nyc_chinatown.jpg" alt="tom and i exploring chinatown">
@@ -36,5 +39,19 @@
             <img src="../index_images/chicago_shedd2.jpg" alt="tom being silly at the shedd aquarium">
         </div>
     </main>
+    <footer>
+        <p>University of Michigan SI 339 Final Project <br>
+            &copy;2023 Joy Hengstebeck </p>
+    </footer>
 </body>
+
+<script>
+    $(function () {
+        
+        $('nav li a').filter(function () {
+            return this.href === location.href;
+        }).addClass('active');
+    });
+</script>
+
 </html>
