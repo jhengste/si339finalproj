@@ -88,7 +88,7 @@ p {
 	align-items: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
 	body {
 		font-size: 18px;
 		line-height: 1.15;
@@ -141,7 +141,7 @@ p {
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1800px) {
 	body {
 		font-size: 18px;
 		line-height: 1.15;
